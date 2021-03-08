@@ -9,6 +9,7 @@
 body {
 	font-family: "Lato", sans-serif;
 	background-color: #ebf0f7c0;
+	margin: 0 20px;
 }
 
 .main-section {
@@ -38,7 +39,7 @@ body {
 
 .indicators {
 	position: absolute;
-	width: 85%;
+	width: 65%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -63,7 +64,8 @@ body {
 .testimonial-container {
 	background-color: #fff;
 	max-width: 320px;
-	height: 390px;
+	min-width: 150px;
+	min-height: 390px;
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
@@ -118,4 +120,10 @@ body {
 	font-weight: 400;
 	text-transform: capitalize;
 	margin-left: 20px;
+}
+
+@media (max-width: 560px) {
+	.indicators {
+		width: 98%;
+	}
 }
